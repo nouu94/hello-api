@@ -23,7 +23,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git credentialsId: 'github-token', url: 'https://github.com/nouu94/hello-api.git'
+                git branch: 'main', credentialsId: 'github-api-token', url: 'https://github.com/nouu94/hello-api.git'
             }
         }
 
