@@ -32,3 +32,4 @@ license/
 *.so
 *.exe
 *.dll
+!gradle/wrapper/gradle-wrapper.jar
