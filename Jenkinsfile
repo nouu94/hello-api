@@ -8,6 +8,9 @@ pipeline {
     environment {
         IMAGE_NAME = 'nouu94/hello-api'
         DOCKER_CREDENTIALS_ID = 'dockerhub-creds'
+
+	JAVA_HOME = "${tool 'jdk-21'}"
+	PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
     }
 
     stages {
