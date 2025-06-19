@@ -1,0 +1,34 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# IDEA 설치 파일 제외
+lib/
+jbr/
+plugins/
+jdk-shared-indexes/
+modules/
+help/
+license/
+*.txt
+*.json
+*.jar
+*.zip
+*.so
+*.exe
+*.dll
