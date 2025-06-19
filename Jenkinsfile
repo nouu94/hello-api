@@ -3,7 +3,6 @@ pipeline {
 
     tools {
         jdk 'jdk-21'
-        gradle 'gradle-8.4'  // ✅ wrapper 대신 system gradle 사용
     }
 
     environment {
@@ -20,7 +19,8 @@ pipeline {
 
         stage('Build JAR') {
             steps {
-                sh 'gradle clean bootJar'
+		sh 'chmod +x ./gradlew'
+                sh './gradlew clean bootJar'
             }
         }
 
